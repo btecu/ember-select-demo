@@ -1,0 +1,23 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 2rem;
+  max-width: 720px;
+}
+
+.nav a.active {
+  font-weight: bold;
+}
+
+.showcase section {
+  margin-bottom: 1.75rem;
+}
+
+.showcase h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+.showcase p {
+  margin: 0.4rem 0 0;
+  color: #555;
+}

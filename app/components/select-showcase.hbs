@@ -1,0 +1,35 @@
+<div class="showcase">
+  <section data-test-example="strings">
+    <h3>Basic (list of strings)</h3>
+    <XSelect
+      @model={{this.colors}}
+      @value={{this.color}}
+      @placeholder="Pick a color..."
+      @onSelect={{this.selectColor}}
+    />
+    <p>Selected: <strong data-test-result>{{this.color}}</strong></p>
+  </section>
+
+  <section data-test-example="objects">
+    <h3>Objects</h3>
+    <XSelect
+      @model={{this.cars}}
+      @value={{this.carId}}
+      @openOnFocus={{true}}
+      @onSelect={{this.selectCar}}
+    />
+    <p>Selected: <strong data-test-result>{{this.carLabel}}</strong> (id {{this.carId}})</p>
+  </section>
+
+  <section data-test-example="free-text">
+    <h3>Free text</h3>
+    <XSelect
+      @model={{this.colors}}
+      @value={{this.freeColor}}
+      @freeText={{true}}
+      @placeholder="Type anything..."
+      @onSelect={{this.selectFreeColor}}
+    />
+    <p>Value: <strong data-test-result>{{this.freeColor}}</strong></p>
+  </section>
+</div>
